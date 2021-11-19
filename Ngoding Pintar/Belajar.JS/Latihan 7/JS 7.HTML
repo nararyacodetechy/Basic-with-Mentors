@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS - 7</title>
+</head>
+<body>
+	<h3>Belajar Javascript @Ngoding Pintar</h3>
+</body>
+</html>
+
+<script type="text/javascript">
+	//Mengenal operator perbandingan & Logika pada Javascript
+
+	/*
+		>> Operator Perbandingan
+		- lebih besar (>)
+		- lebih kecil (<)
+		- sama dengan (== atau ===)
+		- tidak sama dengan (!= atau !==)
+		- lebih besar sama dengan (>=)
+		- lebih kecil sama dengan (<=)
+
+		>> Operator Logika
+		- Logika AND / Dan (&&)
+		- Logika OR / Atau (||)
+		- Logika NOT / Kebalikan (!)
+	*/
+
+	// >> Operator perbandingan
+	var a = 17;
+	var b = 18;
+
+	var hasil;
+	
+	// - lebih besar (>)
+	hasil = a > b;
+	document.write(` ${a}  > ${b} = ${hasil}<br>`)
+	// - lebih kecil (>)
+	hasil = a < b;
+	document.write(` ${a}  < ${b} = ${hasil}<br>`)
+	// - sama dengan (==)
+	hasil = a == b;
+	document.write(` ${a} == ${b} = ${hasil}<br>`)
+	// - tidak sama dengan (!==)
+	hasil = a != b;
+	document.write(` ${a} != ${b} = ${hasil}<br>`)
+	// - lebih besar sama dengan (>=)
+	hasil = a >= b;
+	document.write(` ${a} >= ${b} = ${hasil}<br>`)
+	// - lebih kecil sama dengan (<=)
+	hasil = a <= b;
+	document.write(` ${a} <= ${b} = ${hasil}<br><br><br><br>`)
+	
+</script>
+<script type="text/javascript">
+	// >>Operator Logika
+	var a = 17;
+	var b = 18;
+
+	var hasil;
+
+	var hasil02 = a > b; //true
+	var hasil03 = a < b; //false
+
+	// logika AND / dan (&&)
+	hasil = hasil02 && hasil03;
+	document.write(`${hasil02} && ${hasil03} = ${hasil}<br>`)
+
+	// logika OR / Atau (||)
+	hasil = hasil02 || hasil03;
+	document.write(`${hasil02} || ${hasil03} = ${hasil}<br><br>`)
+
+	// logika NOT / kebalikan (!)
+	hasil = !hasil02;
+	document.write(`!${hasil02} = ${hasil}<br>`)
+	hasil = !hasil03;
+	document.write(`!${hasil03} = ${hasil}`)
+
+
+</script>

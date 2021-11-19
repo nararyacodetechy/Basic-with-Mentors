@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+	<meta name="viewport" content="width-device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<nav>
+		<div class="menu-mobile">
+			<a href="#">Menu</a>
+		</div>
+
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">PRODUCT</a></li>
+			<li><a href="#">GALERY</a></li>
+			<li><a href="#">NEWS</a></li>
+			<li><a href="#">MY EVENTORY</a></li>
+		</ul>
+	</nav>
+
+	<section id="box-profile">
+		<div class="img-profile">
+			<div class="photo" style="background-image: url(assets/img/profil.jpg);"></div>
+		</div>
+
+		<div class="description">
+			<h1 id="pName">Bagus Nararya</h1>
+			<p id="pRole">Web Developer</p>
+			<a href="#" class="button bg-green">Contact</a>
+			<a href="#input-form" class="button border-blue" onclick="editForm()">Edit</a>
+		</div>
+
+		<div class="information">
+			<div class="data">
+				<p class="field">Availability</p>
+				<p id="pAvailable" class="text-gray">Full Time</p>
+			</div>
+			<div class="data">
+				<p class="field">Age</p>
+				<p id="pAge" class="text-gray">18</p>
+			</div>
+			<div class="data">
+				<p class="field">Location</p>
+				<p id="pLocation" class="text-gray">Bali, Indonesia</p>
+			</div>
+			<div class="data">
+				<p class="field">Years Experiences</p>
+				<p id="pExperience" class="text-gray">1</p>
+			</div>
+			<div class="data">
+				<p class="field">Email</p>
+				<p id="pEmail" class="text-gray">bagusnararyanandaraditya@gmail.com</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="input-form">
+
+		<!-- <form method="#" action="#"> -->
+
+		<p align="center" class="title-information">edit your information</p>
+
+			<div class="form">
+				<label>Name<br></label>
+				<input id="inpName" type="text" name="name">
+			</div>
+
+			<div class="form">
+				<label>Role<br></label>
+				<input id="inpRole" type="text" name="role">
+			</div>
+
+			<div class="form">
+				<label>Availability<br></label>
+				<input id="inpAvailability" type="text" name="availability">
+			</div>
+
+			<div class="form">
+				<label>Age <br></label>
+				<input id="inpAge" type="number" name="age">
+			</div>
+
+			<div class="form">
+				<label>Location<br></label>
+				<input  id="inpLocation" type="text" name="location">
+			</div>
+
+			<div class="form">
+				<label class="box-edit">Years Experiences<br></label>
+				<input id="inpYears" type="number" name="years">
+			</div>
+
+			<div class="form">
+				<label>Email<br></label>
+				<input id="inpEmail" type="email" name="email">
+			</div>
+
+			<div class="form">
+				<input onclick="simpanForm()" type="submit" value="SUBMIT" class="bg-blue">
+			</div>
+
+		<!-- </form> -->
+	</section>
+
+	<script>
+		var formMenu = document.getElementById("input-form");
+		formMenu.style.display = "none";
+
+		function editForm(){
+			if(formMenu.style.display === "none"){
+				formMenu.style.display = "block";
+			}else{
+				formMenu.style.display = "none";
+			}
+		}
+
+		var name = document.getElementById("pName").innerHTML;
+		var role = document.getElementById("pRole").innerHTML;
+		var available = document.getElementById("pAvailable").innerHTML;
+		var age = document.getElementById("pAge").innerHTML;
+		var loca = document.getElementById("pLocation").innerHTML;
+		var years = document.getElementById("pExperience").innerHTML;
+		var email = document.getElementById("pEmail").innerHTML;
+
+		document.getElementById("inpName").value = name;
+		document.getElementById("inpRole").value = role;
+		document.getElementById("inpAvailability").value = available;
+		document.getElementById("inpAge").value = age;
+		document.getElementById("inpLocation").value = loca;
+		document.getElementById("inpYears").value = years;
+		document.getElementById("inpEmail").value = email;
+		
+
+		function simpanForm(){
+			formMenu.style.display = "none";
+
+			var name = document.getElementById("inpName").value;
+			var role = document.getElementById("inpRole").value;
+			var vailable = document.getElementById("inpAvailability").value;
+			var age = document.getElementById("inpAge").value;
+			var loca = document.getElementById("inpLocation").value;
+			var years = document.getElementById("inpYears").value;
+			var email = document.getElementById("inpEmail").value;
+
+			document.getElementById("pName").innerHTML = name;
+			document.getElementById("pRole").innerHTML = role;
+			document.getElementById("pAvailable").innerHTML = vailable;
+			document.getElementById("pAge").innerHTML = age;
+			document.getElementById("pLocation").innerHTML = loca;
+			document.getElementById("pExperience").innerHTML = years;
+			document.getElementById("pEmail").innerHTML = email;
+		}
+	</script>
+
+</body>
+</html>

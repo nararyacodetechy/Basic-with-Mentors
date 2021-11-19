@@ -1,0 +1,35 @@
+h1{
+	text-align: center;
+	text-decoration: overline underline;
+	text-transform: uppercase;
+	/* y x blur warna*/
+	text-shadow: 1px 2px 5px green;
+}
+
+.satu{
+	text-transform: capitalize;
+}
+.dua{
+	text-transform: lowercase;
+}
+.tiga{
+	text-transform: uppercase;
+	text-decoration: line-through;
+}
+.artikel{
+	text-align: justify;
+	text-indent: 30px; /*Tab*/
+	word-spacing: 10px; /*memberi jarak spasi pada kata*/
+}
+
+/*cara menghilangkan garis bawah*/
+a{
+	text-decoration: none;
+	letter-spacing: 5px; /*memberi jarak spasi pada kata*/
+}
+
+.satu{
+	font-family: arial, serif;
+	font-size: 28px;
+	font-weight: bold;
+}

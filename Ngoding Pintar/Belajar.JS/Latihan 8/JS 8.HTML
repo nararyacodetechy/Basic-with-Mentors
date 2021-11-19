@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>JS - 8</title>
+</head>
+<body>
+	<h3>Nilai UAS Mahasiswa Undiknas</h3>
+</body>
+</html>
+<script type="text/javascript">
+	// Belajar Percabangan Javascrpt
+
+	// if (kondisi){ekspresi} else(ekspresi2)
+
+	// Pengujian Total Belanja
+
+	// var totalbelanja = prompt("Inputkan total belanja!", 0);
+	// if(totalbelanja > 100000){
+	// 	document.write("<h3>Selamat Anda mendapatkan Hadiah</h3><br>");
+	// 	document.write("terima kasih sudah berbelanja")}
+	// else{ 
+	// 	document.write("<h3>Maaf, Anda perlu berbelanja minimal 100.001</h3><br>");
+	// 	document.write("terima kasih sudah berbelanja")}
+
+
+	//Pengujian Grade Nilai
+
+	var nilai = prompt("Inputkan Nilai", 0);
+	var grade = "";
+
+	if(nilai >= 90){
+		grade = "A";
+	}
+	else if(nilai >= 75 && nilai < 90){
+		grade = "B+"
+	}
+	else if(nilai >= 60 && nilai < 75){
+		grade = "B"
+	}
+	else if(nilai >= 45 && nilai < 60){
+		grade = "C"
+	}
+	else if(nilai < 45 && nilai >= 30){
+		grade = "D"
+
+	}else if(nilai < 30){
+		grade = "E"
+	}
+	document.write("Grade : " + grade);
+	
+</script>

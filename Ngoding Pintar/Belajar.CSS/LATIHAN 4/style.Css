@@ -1,0 +1,17 @@
+/*jenis-jenis cara mewarna di HTML :
+	Wsrna/color :
+	- name
+	- hexa
+	- rgba
+*/
+
+
+h1{			/*Penggunaan name*/
+	color : red;
+}
+li{			/*penggunaan hexa : ambil warna dari photishop*/
+	color: #3ffa97
+}
+p{			/*penggunaan rgba : ambil angka  dari R, G, dan B pada photishop*/
+	background-color: rgba(3,125,252,0.2);
+}

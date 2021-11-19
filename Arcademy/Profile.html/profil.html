@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile Page</title>
+
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+<body>
+	<nav>
+		<div class="menu-mobile">
+			<a href="#">Menu</a>
+		</div>
+
+		<ul>
+			<li><a href="#">HOME</a></li>
+			<li><a href="#">PRODUCT</a></li>
+			<li><a href="#">GALERY</a></li>
+			<li><a href="#">NEWS</a></li>
+			<li><a href="#">MY EVENTORY</a></li>
+		</ul>
+	</nav>
+
+	<section id="box-profile">
+		<div class="img-profile">
+			<div class="photo" style="background-image: url(assets/img/profil.jpg);">
+			</div>
+		</div>
+
+
+
+		<div class="description">
+			<h1 id="pName">Bagus Nararya</h1>
+			<p id="pRole">Web Developer</p>
+			<a href="https://www.instagram.com/invites/contact/?i=szgn72zgxjl7&utm_content=gl997jb" class="button bg-green">Contact</a>
+			<a href="#box-information" class="button border-blue" onclick="editForm()">Edit</a>
+		</div>
+
+
+
+
+		<div class="information">
+			<div class="data">
+				<p class="field"><b>Availability</b></p>
+				<p id="pVailable" class="text-gray">Full Time</p>
+			</div>
+			<div class="data">
+				<p class="field"><b>Age</b></p>
+				<p id="pAge" class="text-gray">18</p>
+			</div>
+			<div class="data">
+				<p class="field"><b>Location</b></p>
+				<p id="pLocation" class="text-gray">Bali, Indonesia</p>
+			</div>
+			<div class="data">
+				<p class="field"><b>Years Experiences</b></p>
+				<p id="pExperience" class="text-gray">1</p>
+			</div>
+			<div class="data">
+				<p class="field"><b>Email</b></p>
+				<p id="pEmail" class="text-gray">bagusnararyanandaraditya@gmail.com</p>
+			</div>
+		</div>
+	</section>
+
+	<section id="box-information">
+
+		<form method="#" action="#" class="edit-information">
+		<p align="center" class="title-information"><b>edit your information</b></p>
+			<div class="edit-info">
+				<label>Name<br></label>
+				<input id="inpName" class="box-edit" type="text"  size="50" placeholder="  Your Name">
+			</div>
+
+			<div class="edit-info">
+				<label>Role<br></label>
+				<input id="inpRole" class="box-edit" type="text" size="50">
+			</div>
+
+			<div class="edit-info">
+				<label>Availability<br></label>
+				<input id="inpAvailable" class="box-edit" type="text" size="50">
+			</div>
+
+			<div class="edit-info">
+				<label>Age <br></label>
+				<input id="inpAge" class="box-edit" type="number" size="50">
+			</div>
+
+			<div class="edit-info">
+				<label>Location<br></label>
+				<input id="inpLocation" class="box-edit" type="text" size="50">
+			</div>
+
+			<div class="edit-info">
+				<label class="box-edit">Years Experiences<br></label>
+				<input id="inpExperiences" class="box-edit" type="number" size="50">
+			</div>
+
+			<div class="edit-info">
+				<label>Email<br></label>
+				<input id="inpEmail" class="box-edit" type="email" size="50">
+			</div>
+
+			<div class="edit-info">
+				<label>Password<br></label>
+				<input id="inpPassword" class="box-edit" type="password" size="10">
+			</div>
+
+			<div class="edit-info">
+				<input onclick="simpanForm()" type="submit" class="submit" value="SUBMIT">
+			</div>
+
+		</form>
+	</section>
+
+	<script type="">
+		var formMenu = document.getElementById("box-information");
+		formMenu.style.display - "none";
+		
+
+		function editForm(){
+			if (formMenu.style.display = "none") {
+				formMenu.style.display = "block";
+			} 
+			else{
+				formMenu.style.display = "none";
+			}
+
+			var name = document.getELementById("pName").innerHTML;
+			document.getELementById("inpName").value - name;
+		}
+
+		function showMenu(){
+			var menu = document.getELementById("menu");
+			var box = document.getELementById("box-profile");
+
+			if(menu.style.display === "block"){
+				menu.style.display = "none";
+				box.style.paddingTop = "0px";
+			}
+			else{
+				menu.style.display = "block";
+				box.style.paddingTop = "125px";
+			}
+		}
+
+	</script>
+</body>
+</html>
+

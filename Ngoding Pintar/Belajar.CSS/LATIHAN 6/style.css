@@ -1,0 +1,17 @@
+a{
+	color: blue;
+}
+a:hover{
+	color: #0ff37a; /*green*/
+	
+}
+a:active{
+	background-color: yellow;
+	color: red;
+}
+a:visited{
+	color: re(d);
+}
+
+
+
